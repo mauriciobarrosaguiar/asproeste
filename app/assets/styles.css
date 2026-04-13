@@ -34,7 +34,7 @@
 }
 
 [data-testid="stSidebar"] * {
-    color: #f8fffb;
+    color: #e6f4ee;
 }
 
 .brand-card,
@@ -164,6 +164,28 @@ div[data-testid="stDataFrame"],
 div[data-testid="stExpander"] {
     background: rgba(255, 255, 255, 0.72);
     border-radius: var(--radius-md);
+}
+
+/* 🔥 BOTÕES DO MENU CORRIGIDOS */
+[data-testid="stSidebar"] button {
+    background-color: #2f855a !important;
+    color: #ffffff !important;
+    border-radius: 999px;
+    height: 48px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* HOVER */
+[data-testid="stSidebar"] button:hover {
+    background-color: #276749 !important;
+    color: #ffffff !important;
+}
+
+/* BOTÕES INATIVOS */
+[data-testid="stSidebar"] button[kind="secondary"] {
+    background-color: #b7c9c0 !important;
+    color: #17382f !important;
 }
 
 button[kind="primary"],

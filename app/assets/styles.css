@@ -75,7 +75,12 @@
 
 .profile-card {
     margin-bottom: 1rem;
-    color: #17382f;
+}
+
+/* 🔥 CORREÇÃO DO TEXTO DO CARD */
+.profile-card,
+.profile-card * {
+    color: #17382f !important;
 }
 
 .page-title {
@@ -169,7 +174,7 @@ div[data-testid="stExpander"] {
     border-radius: var(--radius-md);
 }
 
-/* 🔥 MENU CORRIGIDO TOTAL */
+/* MENU */
 [data-testid="stSidebar"] button {
     background-color: #2f855a !important;
     color: #ffffff !important;
@@ -185,7 +190,7 @@ div[data-testid="stExpander"] {
     color: #ffffff !important;
 }
 
-/* BOTÃO INATIVO (ANTES APAGADO) */
+/* BOTÃO INATIVO */
 [data-testid="stSidebar"] button[kind="secondary"] {
     background-color: #2d6a4f !important;
     color: #e6f4ee !important;

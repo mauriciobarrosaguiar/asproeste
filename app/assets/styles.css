@@ -37,6 +37,7 @@
     color: #e6f4ee;
 }
 
+/* CARDS */
 .brand-card,
 .profile-card,
 .login-panel {
@@ -85,6 +86,7 @@
     margin-bottom: 0.15rem;
 }
 
+/* LOGIN */
 .login-hero {
     text-align: center;
     margin: 2.5rem 0 1rem;
@@ -104,6 +106,7 @@
     padding: 1.4rem;
 }
 
+/* BADGES */
 .status-badge {
     display: inline-flex;
     align-items: center;
@@ -113,8 +116,6 @@
     padding: 0.22rem 0.7rem;
     font-size: 0.78rem;
     font-weight: 700;
-    text-transform: capitalize;
-    letter-spacing: 0.01em;
 }
 
 .status-badge.success {
@@ -142,6 +143,7 @@
     color: #355148;
 }
 
+/* CARDS FINANCEIROS */
 .payment-card {
     background: rgba(255, 255, 255, 0.84);
     border: 1px solid rgba(24, 51, 43, 0.08);
@@ -159,6 +161,7 @@ div[data-testid="stMetric"] {
     box-shadow: var(--shadow-soft);
 }
 
+/* FORM */
 div[data-testid="stForm"],
 div[data-testid="stDataFrame"],
 div[data-testid="stExpander"] {
@@ -166,7 +169,7 @@ div[data-testid="stExpander"] {
     border-radius: var(--radius-md);
 }
 
-/* 🔥 BOTÕES DO MENU CORRIGIDOS */
+/* 🔥 MENU CORRIGIDO TOTAL */
 [data-testid="stSidebar"] button {
     background-color: #2f855a !important;
     color: #ffffff !important;
@@ -176,23 +179,25 @@ div[data-testid="stExpander"] {
     margin-bottom: 8px;
 }
 
+/* BOTÃO ATIVO */
+[data-testid="stSidebar"] button[kind="primary"] {
+    background-color: #2f855a !important;
+    color: #ffffff !important;
+}
+
+/* BOTÃO INATIVO (ANTES APAGADO) */
+[data-testid="stSidebar"] button[kind="secondary"] {
+    background-color: #2d6a4f !important;
+    color: #e6f4ee !important;
+}
+
 /* HOVER */
 [data-testid="stSidebar"] button:hover {
     background-color: #276749 !important;
     color: #ffffff !important;
 }
 
-/* BOTÕES INATIVOS */
-[data-testid="stSidebar"] button[kind="secondary"] {
-    background-color: #b7c9c0 !important;
-    color: #17382f !important;
-}
-
-button[kind="primary"],
-button[kind="secondary"] {
-    border-radius: 999px;
-}
-
+/* RESPONSIVO */
 @media (max-width: 768px) {
     .main .block-container {
         padding-top: 1rem;
